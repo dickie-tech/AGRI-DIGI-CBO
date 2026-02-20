@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agri-Digi login</title>
+  <link rel="stylesheet" href="login11.css">
+</head>
+<body>
+  <div class="login-page">
+    <div class="logo-image">
+      <img src="images/AGRI-DIGI CBO Logo with Yellows and Greens2.png">
+    </div>
+    <div class="login-container">
+    <h1>Welcome Back</h1>
+    <h2>Login</h2>
+  <form id="login-form">
+    <label for="login-email">Email:</label>
+    <input type="email" id="register-address" placeholder="Email" required />
+    <label for="password">Enter Password:</label>
+    <input type="password" id="register-password" placeholder="Password" required />
+       
+    <div class="remember-forgot">
+      <label>
+        <input type="checkbox">
+        <p>Remember me</p>
+      </label>
+      <a href="#" class="forgot">Forgot Password?</a>
+    </div>
+    <button type="submit" class="btnlogin">Login</button>
+    <div class="register-link"><p>Don't have an account?
+      <a href="sign-up.html">Sign up</a>
+    </p></div>
+    <div id="login-error" style="color:red; margin-top:10px;"></div>
+  </form>
+  </div>
+  </div>
+  <!-- Firebase SDK -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+    import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
+
+    // Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDoJnrBj36VbxxlP_UW0Fqg4kHSQehlKmk",
+      authDomain: "agri-digi.firebaseapp.com",
+      projectId: "agri-digi",
+      storageBucket: "agri-digi.appspot.com",
+      messagingSenderId: "75045066424",
+      appId: "1:75045066424:web:2f811fdd1347020fc4064d",
+      measurementId: "G-PV6WEHB1FV"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    // Login form handling
+    const loginForm = document.getElementById('login-form');
+    const errorDiv = document.getElementById('login-error');
+
+    loginForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('register-address').value;
+      const password = document.getElementById('register-password').value;
+
+      errorDiv.textContent = "";
+
+      try {
+        const userCredential = await signInWithEmailAndPassword(auth, email, password);
+        const user = userCredential.user;
+        console.log("Logged in:", user);
+        // Redirect to dashboard
+        window.location.href = "profile.html"; // Change this to your actual dashboard
+      } catch (error) {
+        console.error("Login error:", error.message);
+        errorDiv.textContent = "Login failed: " + error.message;
+      }
+    });
+  </script>
+  
+</body>
+</html>
