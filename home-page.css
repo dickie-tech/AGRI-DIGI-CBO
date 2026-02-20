@@ -1,0 +1,762 @@
+body{
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+   
+  background-color: white;
+  
+}
+.header{
+  background: rgb(255, 255, 255);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  
+  z-index: 1000;
+}
+.header div{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ padding: 1rem 0;
+ margin-left: 250px;
+ width: 90%;
+ height: 10vh;
+  
+  
+}
+.header img{
+  height: 15vh;
+  width: 260px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2d5a27;
+  margin-top: -10px;
+  
+  
+}
+
+  
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  margin-left: 60px;
+}
+
+nav a:hover {
+  color: #16a34a;
+}
+
+
+.header-icons{
+  margin-right: 100px;
+
+}
+.middle-section {
+   
+    margin-top: 115px;
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    
+}
+.middle-section::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/tractor.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);  /* Controls blur intensity */
+  z-index: -1;
+}
+.container{
+padding-top: 50px;
+margin-left: 300px;
+}
+.highlight{
+  color: rgb(145, 206, 14);
+}
+.container h1{
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #e7ebf0;
+}
+.container p{
+  font-size: 1.5rem;
+   color: #b7f095;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: 170px;
+  
+}
+.cta-button{
+  background-color:#16a34a;
+  background: #16a34a;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 400px;
+}
+.cta-button:hover {
+  background: #15803d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+}
+.agriculture-section{
+  display: flex;
+  flex-direction: row;padding-top: 50px;
+  height: 94vh;
+  row-gap: 20px;
+  align-items: center;
+  background-image: url(images/Small\ Fresh\ Spring\ Green\ Leaf\ H5\ Background\ Wallpaper\ Image\ For\ Free\ Download\ -\ Pngtree.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.images-section{
+  display: flex;
+  flex-direction: column;
+  padding-left: 150px;
+  
+}
+.image1 img{
+  height: 400px;
+  width: 400px;
+  border-radius: 200px;
+  border: solid 6px;
+  border-color: darkgreen;
+  margin-top: 120px;
+}
+.image2 img{
+  position: relative;
+  margin-top: -150px;
+  height: 160px;
+  width: 160px;
+  border: solid 3px;
+  border-radius: 80px;
+}
+.future, .farming{
+  margin-left: -100px;
+  margin-top: -320px;
+}
+.future{
+  margin-left: 100px;
+  width: 140%;
+  margin-top: -100px;
+  
+}
+.future p{
+  font-size: 26px;
+  font-weight: bold;
+}
+.future ul{
+  margin-left: -20px;
+  width: 320px;
+  list-style: disc;
+}
+.farming {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.farming div{
+  
+  margin-top: 40px;
+  height: 250px;
+  width: 300px;
+  margin-right: 120px;
+}
+.natural p,.quality p{
+  padding-top: 80px;
+  padding-left: 90px;
+  font-size: 17px;
+  font-weight: 700;
+}
+.quality{
+  background-color: rgb(241, 175, 54);
+  color: black;
+}
+.natural{
+  background-color: green;
+  color: white;
+}
+.natural li{
+  margin-left: 30px;
+  list-style: none;
+  font-size: 14px;
+  color: lightgreen;
+}
+.quality li{
+  margin-left: 30px;
+  list-style: none;
+  font-size: 14px;
+  color: green;
+}
+.success-impact{
+  background-image: url(images/Small\ Fresh\ Spring\ Green\ Leaf\ H5\ Background\ Wallpaper\ Image\ For\ Free\ Download\ -\ Pngtree.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 2300px;
+
+}
+.success-impact img{
+  height: 500px;
+  width: 900px;
+  margin-left: 300px;
+  margin-top: 30px;
+  border-radius: 30px;
+
+}
+.rates{
+  display: flex;
+  flex-direction: row;
+}
+.rates div{
+  
+  height: 220px;
+  width: 250px;
+  margin-top: 20px;
+  border-radius: 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.rate95{
+  margin-left: 200px;
+  background-color: rgb(226, 249, 222);
+}
+.rate100, .rate400, .rate101{
+  margin-left: 30px;
+}
+.rates p{
+  padding-left: 25px;
+  padding-top: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+}
+.rates h1{
+  font-size: 14px;
+  padding-left: 25px;
+  margin-top: -30px;
+}
+.rates h2{
+  font-size: 13px;
+  padding-left: 25px;
+  width: 220px;
+  margin-top: -10px;
+}
+.rate100{
+  color: white;
+  background-color: rgb(34, 110, 34);
+}
+.rate100 p{
+  color: white;
+}
+.rate400, .rate101{
+  background-color: rgb(226, 249, 222);
+}
+.rates div:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 4px 12px rgba(57, 198, 18, 0.3);
+  cursor: pointer;
+  
+}
+.more-info{
+  display: flex;
+  flex-direction: row;
+  margin-left: -100px;
+  margin-top: 40px;
+}
+.stock-images img{
+  height: 300px;
+  width: 320px;
+}
+.last-section img{
+   height: 300px;
+   width: 320px;
+   margin-left: 0px;
+}
+.interact{
+  width: 450px;
+  margin-left: 50px;
+  
+}
+.experience{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+.Get{
+  margin-top: 30px;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+}
+.experience div{
+  background-color: rgb(81, 161, 1);
+  height: 250px;
+  width: 220px;
+  margin-top: 20px;
+
+}
+.experience p{
+  font-size: 16px;
+  padding-left: 25px;
+}
+.experience h1{
+  font-size: 17px;
+   padding-left: 25px;
+   padding-top: 30px;
+   color: white;
+}
+.experience h2{
+  font-size: 14px;
+   padding-left: 25px;
+   color: white;
+}
+
+.last-section{
+  margin-left: 60px;
+}
+
+.interact li{
+  margin-top: 30px;
+  list-style:square;
+}
+.last-section li{
+  list-style: circle;
+  margin-top: 30px;
+  font-size: 14px;
+}
+.section-title h2{
+  margin-left: 500px;
+  font-size: 36px;
+}
+.results{
+  color: rgb(11, 11, 11);
+  font-size: 21px;
+  margin-left: 300px;
+  font-weight: 500;
+
+}
+.stories-grid{
+  display: flex;
+  flex-direction: row;
+  margin-left: 100px;
+  gap: 20px;
+}
+.story-card{
+  border: solid 1px;
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  border-radius: 20px;
+}
+.story-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 4px 12px rgba(57, 198, 18, 0.3);
+  cursor: pointer;
+}
+.story-badge{
+  padding-top: 40px;
+  padding-left: 100px;
+  font-weight: 700;
+  font-size: 22px;
+}
+.quote{
+  color: green;
+  margin-left: 20px;
+  
+}
+.author-avatar{
+  margin-left: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.story-author h4{
+  margin-left: 190px;
+  margin-top: -27px;
+}
+.stars{
+  color:rgb(253, 196, 24);
+  font-size: 20px;
+  margin-left: 130px;
+  margin-top: -20px;
+  
+}
+.author-info p{
+  margin-left: 70px;
+  color: black;
+  font-size: 17px;
+  font-weight: 700;
+}
+.footer-container{
+  background-color: rgb(12, 2, 2);
+  color: white;
+  height: 300px;
+}
+.footer-content{
+  display: flex;
+  flex-direction: row;
+  margin-left: 100px;
+}
+.footer-section{
+  width: 400px;
+  margin-left: 50px;
+}
+.footer-content h4{
+  margin-left: 100px;
+  color: green;
+  font-size: 25px;
+  
+}
+.leading{
+  font-size: 17px;
+  margin-top: -30px;
+  color: grey;
+
+}
+.social-links{
+  font-size: 27px;
+}
+.links{
+  margin-left: 130px;
+  color:#b7f095;
+  margin-top: 30px;
+}
+.footer-section li{
+  margin-left: 120px;
+  list-style:disc;
+}
+.footer-section a{
+  text-decoration: none;
+  color: lightgoldenrodyellow;
+}
+.footer-section a:hover{
+  color:#16a34a;
+}
+.info-contact{
+  color:#b7f095;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+.contact1{
+  margin-left: 80px;
+  color: lightgoldenrodyellow;
+}
+.contact1:hover{
+  color: #16a34a;
+  cursor: pointer;
+}
+.footer-bottom{
+  margin-left: 500px;
+  margin-top: 30px;
+  color: grey;
+}
+/* Floating Icon */
+#chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 60px;
+    width: 60px;
+    background: #2e7d32;
+    color: white;
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+#chatbot-icon img{
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+/* Sidebar */
+#chat-sidebar {
+    position: fixed;
+    right: -380px;
+    top: 50%;
+    transform: translateY(-45%);
+    width: 350px;
+    height: 50vh;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    transition: right 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+}
+.chat-header span:hover{
+  cursor: pointer;
+  color: red;
+}
+
+
+#chat-sidebar.active {
+    right: 0;
+}
+
+/* Header */
+.chat-header {
+    background: #2e7d32;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Messages */
+#chat-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.message {
+    margin: 8px 0;
+    padding: 8px 12px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.user-message {
+    background: #c8e6c9;
+    align-self: flex-end;
+}
+
+.bot-message {
+    background: #f1f1f1;
+    align-self: flex-start;
+}
+
+/* Input Area */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 8px;
+    padding-right: 20px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.chat-input button {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+.chat-input button:hover{
+  background-color:#16a34a;
+}
+
+
+@media (max-width: 768px){
+  .header{
+    width: 97vw;
+    position:sticky;
+  }
+  .header div{
+    width: 97vw;
+    margin-left: 10px;
+  }
+  nav{
+    margin-left: -30px;
+  }
+  nav a{
+    margin-left: 5px;
+  }
+  .middle-section{
+    width: 97vw;
+    height: 70vh;
+    margin-top: -20px;
+  }
+  .container{
+    margin-left: 50px;
+    padding-top: 20px;
+  }
+  .highlight{
+    color:#b7f095;
+  }
+  .container h1{
+    font-size: 2.2rem;
+  }
+  .container p{
+    margin-left: 10px;
+    color:#d7e5ae;
+  }
+  .cta-button{
+    margin-left: 100px;
+    margin-top: 30px;
+  }
+  .agriculture-section{
+    width: 97vw;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .image-section{
+    padding-left: 20px;
+  }
+  .image1 img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    margin-left: -150px;
+    margin-top: 20px;
+    position: absolute;
+    border: solid 6px;
+  border-color: darkgreen;
+  }
+  .image2 img{
+    position: relative;
+    margin-top: 100px;
+    margin-right: 40px;
+    margin-left: -200px;
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
+  }
+  .future, .farming{
+    margin-top: -30px;
+    margin-left: 270px;
+  }
+  .farming div{
+    margin-left: -140px;
+  }
+  .success-impact{
+    height: 600vh;
+    width: 96vw;
+  }
+  .success-impact img{
+    height: 270px;
+    width: 320px;
+    margin-left: 100px;
+  }
+  .rates{
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr;
+
+  }
+  .rates div{
+    height: 200px;
+    width: 200px;
+  }
+  .rate95{
+    margin-left: 20px;
+  }
+  .rates p{
+    font-size: 25px;
+    padding-top: 5px;
+  }
+ 
+  .rates h2{
+    font-size: 11px;
+    width: 160px;
+  }
+  .more-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+  }
+  .experience{
+    margin-right: 40px;
+  }
+  .last-section {
+    margin-right: 60px;
+  }
+  .last-section img{
+    margin-right: 20px;
+  }
+  .section-title h2{
+    margin-left: 100px;
+  }
+  .results{
+    margin-left: 40px;
+  }
+  .stories-grid{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+  .footer-container{
+    height: 100vh;
+  }
+  .footer-content{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-section{
+    margin-left: -20px;
+  }
+  .footer-content h4{
+    margin-left: 40px;
+  }
+  .leading{
+    margin-right: 20px;
+  }
+  .links{
+    margin-left: 80px;
+  }
+  .footer-section li{
+    margin-left: 60px;
+  }
+  .info-contact{
+    margin-left: 100px;
+  }
+  .footer-bottom{
+    margin-left: 20px;
+    font-size: 14px;
+  }
+}
