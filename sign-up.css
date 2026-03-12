@@ -176,6 +176,45 @@ h2 {
     opacity: 1;
   }
 }
+/* Role dropdown styling */
+label[for="register-role"] {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  display: block;
+  margin-top: 12px;
+  color: #2e7d32; /* agriculture green */
+}
+
+#register-role {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+#register-role:hover {
+  border-color: #4CAF50;
+}
+
+/* Focus effect */
+#register-role:focus {
+  outline: none;
+  border-color: #2e7d32;
+  box-shadow: 0 0 5px rgba(46, 125, 50, 0.4);
+}
+
+/* Dropdown option style */
+#register-role option {
+  font-size: 14px;
+}
+
 @media(max-width: 768px){
   body{
     background-color:rgb(3, 66, 3);
