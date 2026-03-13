@@ -1,219 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AGRI-DIGI</title>
-  <link rel="stylesheet" href="home-page.css">
-</head>
-<body>
-  <div class="header">
-    <div>
-      <img src="images/AGRI-DIGI CBO Logo with Yellows and Greens.png">
-     <div class="header-icons">
-      <nav>
-                    <ul id="nav-menu">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Success Stories</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-     </div>
-    </div>
-  </div>
-  <div class="middle-section" id="home">
-    <div class="container">
-      <h1>Smart Digital <span class="highlight">Agriculture</span> Solutions</h1>
-            <p>Empowering farmers with cutting-edge technology to optimize crop yields, reduce costs, and build sustainable agricultural practices for the future.</p>
-            <a href="login1.html" class="cta-button">Get Started</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+      content="Agri-Digi – Digital solutions for smarter farming. Crop monitoring, market prices, expert advice, and weather forecasts." />
+    <title>Agri-Digi | Digital Solutions for Smarter Farming</title>
+    <link rel="stylesheet" href="home-page.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
 
-    </div>
-  </div>
-  <div class="agriculture-section" id="about">
-    <div class="images-section">
-     <div class="image1"><img src="images/background.jpg"></div> 
-     <div class="image2"><img src="images/istockphoto-1454047113-612x612.jpg"></div> 
-    </div>
-    <div class="future">
-      <p> Agriculture for 
-        Future Development</p>
-      <ul class="future-list">
-        <li>
-          Leading the digital transformation of agriculture through innovative technology solutions that empower farmers and promote sustainable practices.
-        </li>
-      
-      <li>Promote eco-friendly practices that protect the environment for future generations.</li>
-      <li>Provide farmers with the tools and knowledge to make informed decisions and thrive.</li>
+    <!-- ========== HEADER / NAV ========== -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <svg class="nav__logo-icon" viewBox="0 0 32 32" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="16" fill="#2d6a4f" />
+            <path d="M16 8c0 0-6 4-6 10a6 6 0 0012 0c0-6-6-10-6-10z"
+              fill="#52b788" />
+            <path d="M16 14v10" stroke="#fff" stroke-width="1.5"
+              stroke-linecap="round" />
+            <path d="M13 17c1 0 3-1 3-3" stroke="#fff" stroke-width="1.5"
+              stroke-linecap="round" />
+            <path d="M19 19c-1 0-3-1-3-3" stroke="#fff" stroke-width="1.5"
+              stroke-linecap="round" />
+          </svg>
+          <span>Agri-Digi</span>
+        </a>
 
-      </ul>
-        
-    </div>
-    <div class="farming">
-      <div class="natural"><p>Optimize Yields</p>
-      <li>Maximize crop production through data-driven insights and precision farming techniques.</li>
-    </div>
-      <div class="quality"><p>Reduce Costs</p>
-        <li>Lower operational expenses through smart resource management and automated systems.</li>
-      </div>
-    </div>
-  </div>
-  <div class="success-impact">
-    <img src="images/desktop-wallpaper-green-nature-quality-backgrounds-green-nature.jpg">
-    <div class="rates">
-      <div class="rate95">
-        <p>95%</p>
-        <h1>Clients Satisfaction</h1>
-        <h2>We try our best to engage our clients and offer assistance where possible inorder to lead an agriculturally-developed nation</h2>
-      </div>
-      <div class="rate100">
-        <p>100+</p>
-        <h1>Partners</h1>
-        <h2>We have partnered with different organisations to make sure farmers are well taken care of and their needs are met.</h2>
-      </div>
-      <div class="rate400">
-        <p>400+</p>
-        <h1>Total Clients</h1>
-        <h2>Real results from farmers who have transformed their operations with Agridigi solutions.</h2>
-      </div>
-      <div class="rate101">
-        <p>100%</p>
-        <h1>Expert Feedbacks</h1>
-        <h2>Get to interact with our experts in the field and have your questions answered professionaly.</h2>
-      </div>
-    </div>
-    <div class="more-info">
-      <div class="stock-images">
-        <img src="images/istockphoto-1409996877-612x612.jpg">
-        <img src="images/istockphoto-1454047113-612x612.jpg">
-      </div>
-      <div class="interact">
-        <p class="Get">Leading the digital transformation of agriculture through innovative technology solutions that empower farmers and promote sustainable practices.</p>
-        <div class="experience">
-          <div>
-        <h1>Over 15+ years</h1>
-        <h2>Having been the in the market for that long has made us a trusted company.</h2>
-      </div>
-      <div>
-        <h1>Market Reviews</h1>
-        <h2>Know whats trending in the agricultural market at specific seasons.</h2>
-      </div>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="#home" class="nav__link active"
+              onclick="closeMenu()">Home</a></li>
+          <li><a href="#features" class="nav__link"
+              onclick="closeMenu()">Services</a></li>
+          <li><a href="#market" class="nav__link"
+              onclick="closeMenu()">Market</a></li>
+          <li><a href="#testimonials" class="nav__link"
+              onclick="closeMenu()">Blog</a></li>
+          <li><a href="#contact" class="nav__link"
+              onclick="closeMenu()">Contact</a></li>
+        </ul>
+
+        <div class="nav__actions">
+          <a href="login1.html" class="btn btn--ghost">Log In</a>
+          <a href="sign-up.html" class="btn btn--primary">Sign Up</a>
         </div>
-        <li>Weather forecasts.</li>
-        <li>Automated record keeping.</li>
-        <li>Real time market analysis</li>
-      </div>
-      <div class="last-section">
-        <img src="images/download.jpg">
-        <li>Soil pH Testing. As the farmer you update your soil pH and our system helps to detect what crops you should plant.</li>
-        <li>Crop Production advice. Are you worried about how to produce your crops effectively?This site is for you </li>
-        <li>Livestock production. Manage your livestock's records and stay updated on how your livestock's health progresses.</li>
-      </div>
-      
-    </div>
-    <section class="success-stories" id="services">
-        <div class="stories">
-            <div class="section-title">
-                <h2>Success Stories</h2>
-                <p class="results">Real results from farmers who have transformed their operations with Agridigi solutions.</p>
-            </div>
-            <div class="stories-grid">
-                <div class="story-card">
-                    <div class="story-badge">40% Yield Increase</div>
-                    <p class="quote">"Since implementing Agridigi's smart irrigation system, our corn yields have increased by 40% while reducing water usage by 30%. The ROI was incredible!"</p>
-                    <div class="story-author">
-                        <div class="author-avatar">Maize Farmer ---</div>
-                        <div class="author-info">
-                            <h4>Mary Kimani</h4>
-                            <div class="stars">★★★★★</div>
-                            <p>Transnzoia - Riftvalley Region</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="story-card">
-                    <div class="story-badge">50% Cost Reduction</div>
-                    <p class="quote">"The precision farming tools helped us optimize fertilizer application, cutting costs by 50% while maintaining excellent crop quality. Game-changing technology!"</p>
-                    <div class="story-author">
-                        <div class="author-avatar">Tea Farming ---</div>
-                        <div class="author-info">
-                            <h4>Robert Maina</h4>
-                            <div class="stars">★★★★★</div>
-                            <p>Meru - Eastern Region</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="story-card">
-                    <div class="story-badge">Sustainable Future</div>
-                    <p class="quote">"Agridigi's solutions helped us transition to sustainable farming practices. We're now carbon-neutral and serving as a model for other farms in our region."</p>
-                    <div class="story-author">
-                        <div class="author-avatar">Coffee Farmer --- </div>
-                        <div class="author-info">
-                            <h4>Loise Wangechi</h4>
-                            <div class="stars">★★★★☆</div>
-                            <p>Kirinyaga - Central Region</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+        <button class="nav__burger" id="nav-burger" aria-label="Toggle menu"
+          onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+      <div class="hero__overlay"></div>
+      <img
+        src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=1600&auto=format&fit=crop&q=80"
+        alt="Green farm fields at sunset"
+        class="hero__bg" />
+      <div class="hero__content container">
+        <span class="hero__badge">🌱 Now with AI Crop Insights</span>
+        <h1 class="hero__title">Digital Solutions for<br /><span
+            class="hero__accent">Smarter Farming</span></h1>
+        <p class="hero__subtitle">
+          Empowering farmers with modern technology to maximize yield,<br />
+          reduce costs, and connect to global markets.
+        </p>
+        <div class="hero__actions">
+          <a href="login1.html" class="btn btn--primary btn--lg">Get Started
+            &rarr;</a>
+          <a href="#about" class="btn btn--outline btn--lg">Learn More</a>
         </div>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <strong>30K+</strong><span>Farmers</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <strong>15</strong><span>Languages</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <strong>98%</strong><span>Satisfaction</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-  </div>
-  <footer id="contact">
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>AGRI-DIGI CBO..</h3>
-                    <p class="leading">Leading the digital transformation of agriculture through innovative technology solutions that empower farmers and promote sustainable practices.</p>
-                    <div class="social-links">
-                        <a href="#" title="Facebook">📘</a>
-                        <a href="#" title="Twitter">🐦</a>
-                        <a href="#" title="Instagram">📷</a>
-                        <a href="#" title="LinkedIn">💼</a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h3 class="links">Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Our Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#">Resources</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3 class="info-contact">Contact Info</h3>
-                    <p class="contact1">📞 +1 (555) 123-4567</p>
-                    <p class="contact1">✉️ info@agridigi.com</p>
-                    <p class="contact1">📍 123 Farm Tech Blvd<br>Agriculture City, AC 12345</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Agridigi. All rights reserved. | Privacy Policy | Terms of Service</p>
-            </div>
+    <!-- ========== FEATURES ========== -->
+    <section class="section features" id="features">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">What We Offer</span>
+          <h2 class="section__title">Our Key Features</h2>
+          <p class="section__subtitle">Everything you need to modernise your
+            farm in one platform.</p>
         </div>
+        <div class="features__grid">
+
+          <div class="feature-card" data-aos="fade-up">
+            <div class="feature-card__icon"
+              style="--icon-bg:#d8f3dc; --icon-color:#2d6a4f;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                <path d="M12 8v4M12 16h.01" />
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Crop Monitoring</h3>
+            <p class="feature-card__desc">Real-time satellite and AI-powered
+              monitoring of crop health, growth stages, and soil conditions
+              across all your fields.</p>
+            <a href="#" class="feature-card__link">Learn more &rarr;</a>
+          </div>
+
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-card__icon"
+              style="--icon-bg:#fff3cd; --icon-color:#b45309;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10" /><line x1="12" y1="20"
+                  x2="12" y2="4" />
+                <line x1="6" y1="20" x2="6" y2="14" /><line x1="2" y1="20"
+                  x2="22" y2="20" />
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Market Prices</h3>
+            <p class="feature-card__desc">Live commodity prices, market trends,
+              and demand forecasts to help you decide the best time to sell your
+              harvest.</p>
+            <a href="#" class="feature-card__link">Learn more &rarr;</a>
+          </div>
+
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-card__icon"
+              style="--icon-bg:#e0f0e9; --icon-color:#1b4332;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" /><circle
+                  cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Expert Advice</h3>
+            <p class="feature-card__desc">Connect with certified agricultural
+              experts for personalised recommendations on crop varieties, pest
+              control, and best practices.</p>
+            <a href="#" class="feature-card__link">Learn more &rarr;</a>
+          </div>
+
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-card__icon"
+              style="--icon-bg:#fef9c3; --icon-color:#854d0e;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17.5 19H9a7 7 0 116.71-9h1.79a4.5 4.5 0 110 9z" />
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Weather Forecasts</h3>
+            <p class="feature-card__desc">Hyper-local 14-day weather forecasts,
+              frost and flood alerts, and planting window recommendations
+              tailored to your farm location.</p>
+            <a href="#" class="feature-card__link">Learn more &rarr;</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <div class="about__content" data-aos="fade-right">
+          <span class="section__tag">Who We Are</span>
+          <h2 class="section__title">About Agri-Digi</h2>
+          <p class="about__text">
+            We believe every farmer deserves access to cutting-edge digital
+            tools — not just large agribusinesses.
+            Agri-Digi bridges the gap between generations of farming wisdom and
+            modern technology, making precision
+            agriculture accessible to everyone.
+          </p>
+          <ul class="about__benefits">
+            <li>
+              <span class="about__check">✔</span>
+              <div><strong>30,000+ active farmers</strong> already growing
+                smarter with Agri-Digi</div>
+            </li>
+            <li>
+              <span class="about__check">✔</span>
+              <div><strong>Available in 15 languages</strong> across Africa,
+                Asia, and Latin America</div>
+            </li>
+            <li>
+              <span class="about__check">✔</span>
+              <div><strong>98% satisfaction rate</strong> from our verified
+                farmer community</div>
+            </li>
+            <li>
+              <span class="about__check">✔</span>
+              <div><strong>Works offline</strong> — critical features sync when
+                you're back in range</div>
+            </li>
+          </ul>
+          <a href="#" class="btn btn--primary">Learn More About Us</a>
+        </div>
+        <div class="about__image-wrap" data-aos="fade-left">
+          <img
+            src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=700&auto=format&fit=crop&q=80"
+            alt="Farmer using a tablet in the field"
+            class="about__image" />
+          <div class="about__badge-float">
+            <strong>🏆 Best AgriTech</strong><span>Platform 2024</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MARKET TICKER ========== -->
+    <section class="market-bar" id="market">
+      <div class="market-bar__label">Live Prices</div>
+      <div class="market-bar__track">
+        <div class="market-bar__items" id="ticker">
+          <span>🌽 Maize &nbsp;<strong>$187.50</strong> <em class="up">▲
+              1.2%</em></span>
+          <span>🌾 Wheat &nbsp;<strong>$220.80</strong> <em class="down">▼
+              0.5%</em></span>
+          <span>🍚 Rice &nbsp;<strong>$405.00</strong> <em class="up">▲
+              0.8%</em></span>
+          <span>☕ Coffee &nbsp;<strong>$2,310</strong> <em class="up">▲
+              3.1%</em></span>
+          <span>🫘 Soybeans &nbsp;<strong>$438.20</strong> <em class="down">▼
+              0.3%</em></span>
+          <span>🍬 Sugar &nbsp;<strong>$19.45</strong> <em class="up">▲
+              0.7%</em></span>
+          <span>🌻 Sunflower &nbsp;<strong>$510.00</strong> <em class="up">▲
+              2.4%</em></span>
+          <span>🫙 Palm Oil &nbsp;<strong>$1,040</strong> <em class="down">▼
+              1.0%</em></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="section testimonials" id="testimonials">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Success Stories</span>
+          <h2 class="section__title">What Farmers Say</h2>
+          <p class="section__subtitle">Real stories from farmers who transformed
+            their operations with Agri-Digi.</p>
+        </div>
+        <div class="testimonials__grid">
+
+          <div class="testimonial-card" data-aos="fade-up">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p
+              class="testimonial-card__quote">"Since using Agri-Digi's crop monitoring, I've increased my maize yield by 34% in just two seasons. The soil recommendations are spot on."</p>
+            <div class="testimonial-card__author">
+              <img src="https://i.pravatar.cc/60?img=11" alt="Samuel Osei"
+                class="testimonial-card__avatar" />
+              <div>
+                <strong>Samuel Otieno</strong>
+                <span>Maize Farmer, Eldoret</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card testimonial-card--featured"
+            data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p
+              class="testimonial-card__quote">"The market price alerts saved me thousands. I used to sell at the wrong time — now I know exactly when to hold and when to sell."</p>
+            <div class="testimonial-card__author">
+              <img src="https://i.pravatar.cc/60?img=47" alt="Priya Sharma"
+                class="testimonial-card__avatar" />
+              <div>
+                <strong>Lydia Kabugi</strong>
+                <span>Rice Farmer, Mwea</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p
+              class="testimonial-card__quote">"The weather alerts helped me protect my coffee crop from an unexpected frost. I would have lost everything without that early warning."</p>
+            <div class="testimonial-card__author">
+              <img src="https://i.pravatar.cc/60?img=32" alt="Carlos Mendez"
+                class="testimonial-card__avatar" />
+              <div>
+                <strong>Caroline Mwende</strong>
+                <span>Coffee Grower, Kericho</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA BANNER ========== -->
+    <section class="cta-banner">
+      <div class="container cta-banner__inner">
+        <div>
+          <h2>Ready to farm smarter?</h2>
+          <p>Join 30,000+ farmers already using Agri-Digi. Free to start.</p>
+        </div>
+        <div class="cta-banner__actions">
+          <a href="#" class="btn btn--primary btn--lg">Get Started Free</a>
+          <a href="#contact" class="btn btn--outline-light btn--lg">Contact
+            Sales</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" id="contact">
+      <div class="container footer__grid">
+
+        <div class="footer__brand">
+          <a href="#" class="nav__logo footer__logo">
+            <svg class="nav__logo-icon" viewBox="0 0 32 32" fill="none">
+              <circle cx="16" cy="16" r="16" fill="#52b788" />
+              <path d="M16 8c0 0-6 4-6 10a6 6 0 0012 0c0-6-6-10-6-10z"
+                fill="#d8f3dc" />
+              <path d="M16 14v10" stroke="#fff" stroke-width="1.5"
+                stroke-linecap="round" />
+            </svg>
+            <span>Agri-Digi</span>
+          </a>
+          <p class="footer__tagline">Empowering farmers with modern technology —
+            from seed to market.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook" class="footer__social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path
+                  d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" /></svg>
+            </a>
+            <a href="#" aria-label="Twitter / X" class="footer__social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path
+                  d="M4 4l16 16M20 4L4 20" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" fill="none" /></svg>
+            </a>
+            <a href="#" aria-label="Instagram" class="footer__social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"><rect x="2" y="2" width="20" height="20"
+                  rx="5" ry="5" /><path
+                  d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" /><line
+                  x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
+            </a>
+            <a href="#" aria-label="YouTube" class="footer__social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path
+                  d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z" /><polygon
+                  points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"
+                  fill="#1b4332" /></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Services</a></li>
+            <li><a href="#market">Market</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#testimonials">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="#">Crop Monitoring</a></li>
+            <li><a href="#">Market Prices</a></li>
+            <li><a href="#">Expert Advice</a></li>
+            <li><a href="#">Weather Forecasts</a></li>
+            <li><a href="#">Soil Analytics</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__heading">Contact Us</h4>
+          <ul class="footer__contact">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2"><path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline
+                  points="22,6 12,13 2,6" /></svg>
+              hello@agri-digi.com
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2"><path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 12 19.79 19.79 0 011.61 3.5 2 2 0 013.6 1.32h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.91 9a16 16 0 006.09 6.09l.96-.96a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" /></svg>
+              +1 (800) 246-8357
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2"><path
+                  d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" /><circle
+                  cx="12" cy="10" r="3" /></svg>
+              123 Green Valley Rd,<br />AgriCity, CA 94000
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+          <p>&copy; 2025 Agri-Digi. All rights reserved.</p>
+          <div class="footer__bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Settings</a>
+          </div>
+        </div>
+      </div>
     </footer>
-    <!-- Chatbot Toggle Button -->
-        <div id="chatbot-icon">
-          <img src="images/Chat Bot Icon Free Download _ PNG, SVG & Icon Font Format.jpg">
-        </div>
 
-        <!-- Chat Sidebar -->
-        <div id="chat-sidebar">
-            <div class="chat-header">
-                <h3>Agri-Digi Assistant</h3>
-                <span id="close-chat">✖</span>
-            </div>
+    <!-- Back to top button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top"
+      onclick="scrollToTop()">&#8679;</button>
 
-            <div id="chat-messages"></div>
-
-            <div class="chat-input">
-                <input type="text" id="user-input" placeholder="Ask about crops, livestock..." />
-                <button id="send-btn">Send</button>
-            </div>
-        </div>
-      
-    <script src="scripts/chatbot.js"></script>
-  
-</body>
+    <script src="scripts/main.js"></script>
+  </body>
 </html>
